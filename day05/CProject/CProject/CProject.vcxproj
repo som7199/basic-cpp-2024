@@ -127,7 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ClassInit.cpp" />
+    <ClCompile Include="CopyConst.cpp" />
+    <ClCompile Include="CopyConstruct.cpp" />
+    <ClCompile Include="CopyStruct.cpp" />
     <ClCompile Include="ObjPtrArr.cpp" />
+    <ClCompile Include="PointerThis.cpp" />
+    <ClCompile Include="SelfRef.cpp" />
+    <ClCompile Include="UsefulThisPtr.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

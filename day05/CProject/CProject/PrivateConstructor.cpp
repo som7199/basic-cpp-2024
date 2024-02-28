@@ -1,6 +1,6 @@
 #include <iostream>
 /*
-Å¬·¡½º ³»ºÎ¿¡¼­¸¸ °´Ã¼ÀÇ »ı¼ºÀ» Çã¿ëÇÏ·Á´Â ¸ñÀûÀ¸·Î »ı¼ºÀÚ¸¦ privateÀ¸·Î ¼±¾ğÇÏ±âµµ ÇÔ!!
+í´ë˜ìŠ¤ ë‚´ë¶€ì—ì„œë§Œ ê°ì²´ì˜ ìƒì„±ì„ í—ˆìš©í•˜ë ¤ëŠ” ëª©ì ìœ¼ë¡œ ìƒì„±ìë¥¼ privateìœ¼ë¡œ ì„ ì–¸í•˜ê¸°ë„ í•¨!!
 */
 using namespace std;
 
@@ -12,15 +12,15 @@ public:
 	AAA() : num(0) {}
 	AAA& CreateInitObj(int n) const
 	{
-		AAA* ptr = new AAA(n);		// new ¿¬»êÀÚ·Î Èü ¿µ¿ª¿¡ °´Ã¼ »ı¼ºÇØ¼­ Æ÷ÀÎÅÍ º¯¼ö ptr·Î Á¢±ÙÇÏ°Ú´Ù
+		AAA* ptr = new AAA(n);		// new ì—°ì‚°ìë¡œ í™ ì˜ì—­ì— ê°ì²´ ìƒì„±í•´ì„œ í¬ì¸í„° ë³€ìˆ˜ ptrë¡œ ì ‘ê·¼í•˜ê² ë‹¤
 		return *ptr;
 	}
 	void ShowNum() const {
 		cout << num << endl;
 	}
 
-// »ı¼ºÀÚ°¡ privateÀ¸·Î ¼±¾ğµÇ¾î ÀÖ´Â °æ¿ì ¿ÜºÎ¿¡¼­ »ı¼ºÀÚ È£Ãâ ºÒ°¡! 
-// ¿ÜºÎ¿¡¼­ °´Ã¼ÀÇ »ı¼ºÀ» ¸·´Â °ÅÁö ÀÌ°Ô ¹Ù·Î singleton ÆĞÅÏ!
+// ìƒì„±ìê°€ privateìœ¼ë¡œ ì„ ì–¸ë˜ì–´ ìˆëŠ” ê²½ìš° ì™¸ë¶€ì—ì„œ ìƒì„±ì í˜¸ì¶œ ë¶ˆê°€! 
+// ì™¸ë¶€ì—ì„œ ê°ì²´ì˜ ìƒì„±ì„ ë§‰ëŠ” ê±°ì§€ ì´ê²Œ ë°”ë¡œ singleton íŒ¨í„´!
 private:
 	AAA(int n) : num(n) {}
 };
@@ -30,13 +30,13 @@ int main(void)
 	AAA base;			
 	base.ShowNum();
 
-	AAA& obj1 = base.CreateInitObj(3);		// AAAÅ¸ÀÔÀÇ ÂüÁ¶º¯¼ö obj1¿¡ numÀÌ 3ÀÎ °´Ã¼¸¦ ÀúÀå..!
+	AAA& obj1 = base.CreateInitObj(3);		// AAAíƒ€ì…ì˜ ì°¸ì¡°ë³€ìˆ˜ obj1ì— numì´ 3ì¸ ê°ì²´ë¥¼ ì €ì¥..!
 	obj1.ShowNum();
 
-	AAA& obj2 = base.CreateInitObj(12);		// AAAÅ¸ÀÔÀÇ ÂüÁ¶º¯¼ö obj2¿¡ numÀÌ 12ÀÎ °´Ã¼¸¦ ÀúÀå..!
+	AAA& obj2 = base.CreateInitObj(12);		// AAAíƒ€ì…ì˜ ì°¸ì¡°ë³€ìˆ˜ obj2ì— numì´ 12ì¸ ê°ì²´ë¥¼ ì €ì¥..!
 	obj2.ShowNum();
 
-	// obj1°ú obj2´Â ¼­·Î ´Ù¸¥ °´Ã¼ÀÓ!
+	// obj1ê³¼ obj2ëŠ” ì„œë¡œ ë‹¤ë¥¸ ê°ì²´ì„!
 	delete& obj1;
 	delete& obj2;
 	return 0;
