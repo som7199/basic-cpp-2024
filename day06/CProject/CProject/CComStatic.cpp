@@ -3,8 +3,8 @@ using namespace std;
 
 void Counter()
 {
-	//static int cnt;
-	int cnt = 0;
+	static int cnt;
+	// int cnt = 0;	// Counter 함수 호출이 끝나면 cnt 변수는 사라짐
 	cnt++;
 	cout << "Current cnt : " << cnt << endl;
 }
