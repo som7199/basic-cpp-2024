@@ -4,24 +4,24 @@ using namespace std;
 class Point
 {
 public:
-	// publicÀ¸·Î ¼±¾ğµÇ¾î¼­ Point Å¬·¡½ºÀÇ x, y´Â ¾îµğ¼­µç Á¢±Ù °¡´É!
-	int x;		// x ÁÂÇ¥ÀÇ ¹üÀ§´Â 0 ÀÌ»ó 100 ÀÌÇÏ
-	int y;		// y ÁÂÇ¥ÀÇ ¹üÀ§´Â 0 ÀÌ»ó 100 ÀÌÇÏ
+	// publicìœ¼ë¡œ ì„ ì–¸ë˜ì–´ì„œ Point í´ë˜ìŠ¤ì˜ x, yëŠ” ì–´ë””ì„œë“  ì ‘ê·¼ ê°€ëŠ¥!
+	int x;		// x ì¢Œí‘œì˜ ë²”ìœ„ëŠ” 0 ì´ìƒ 100 ì´í•˜
+	int y;		// y ì¢Œí‘œì˜ ë²”ìœ„ëŠ” 0 ì´ìƒ 100 ì´í•˜
 };
 
 class Rectangle
 {
 public:
-	// µÎ °³ÀÇ Point °´Ã¼¸¦ Rectangle Å¬·¡½ºÀÇ ¸â¹ö·Î µÎ¾ú´Ù!
+	// ë‘ ê°œì˜ Point ê°ì²´ë¥¼ Rectangle í´ë˜ìŠ¤ì˜ ë©¤ë²„ë¡œ ë‘ì—ˆë‹¤!
 	Point upLeft;
 	Point lowRight;
 
 public:
 	void ShowRecInfo()
 	{
-		cout << "ÁÂ »ó´Ü : " << '[' << upLeft.x << ", ";
+		cout << "ì¢Œ ìƒë‹¨ : " << '[' << upLeft.x << ", ";
 		cout << upLeft.y << ']' << endl;
-		cout << "¿ì ÇÏ´Ü : " << '[' << lowRight.x << ", ";
+		cout << "ìš° í•˜ë‹¨ : " << '[' << lowRight.x << ", ";
 		cout << lowRight.y << ']' << endl << endl;
 
 	}
@@ -29,10 +29,10 @@ public:
 
 int main(void) 
 {
-	// ¸â¹ö º¯¼ö°¡ publicÀ¸·Î ¼±¾ğµÇ¸é, ±¸Á¶Ã¼ º¯¼ö¸¦ ÃÊ±âÈ­ÇÏµíÀÌ ÃÊ±âÈ­ °¡´É!!!!
+	// ë©¤ë²„ ë³€ìˆ˜ê°€ publicìœ¼ë¡œ ì„ ì–¸ë˜ë©´, êµ¬ì¡°ì²´ ë³€ìˆ˜ë¥¼ ì´ˆê¸°í™”í•˜ë“¯ì´ ì´ˆê¸°í™” ê°€ëŠ¥!!!!
 	Point pos1 = { -2, 4 };
 	Point pos2 = { 5, 9 };
-	Rectangle rec = { pos2, pos1 };	// À§¿¡¼­ »ı¼ºÇÑ Point °´Ã¼¸¦ ÀÌ¿ëÇØ¼­ Rectangle °´Ã¼ »ı¼º ¹× ÃÊ±âÈ­~!~!~!
+	Rectangle rec = { pos2, pos1 };	// ìœ„ì—ì„œ ìƒì„±í•œ Point ê°ì²´ë¥¼ ì´ìš©í•´ì„œ Rectangle ê°ì²´ ìƒì„± ë° ì´ˆê¸°í™”~!~!~!
 	rec.ShowRecInfo();
 	return 0;
 }

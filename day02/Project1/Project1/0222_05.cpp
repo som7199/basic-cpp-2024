@@ -1,6 +1,6 @@
 #include <iostream>
 /*
-namespace °³³ä
+namespace ê°œë…
 */
 namespace BestComImpl
 {
@@ -26,9 +26,9 @@ int main(void)
 
 void BestComImpl::SimpleFunc(void)
 {
-	std::cout << "BestComÀÌ Á¤ÀÇÇÑ ÇÔ¼ö" << std::endl;
-	PrettyFunc();				// µ¿ÀÏ ÀÌ¸§°ø°£
-	ProgComImpl::SimpleFunc();	// ´Ù¸¥ ÀÌ¸§°ø°£
+	std::cout << "BestComì´ ì •ì˜í•œ í•¨ìˆ˜" << std::endl;
+	PrettyFunc();				// ë™ì¼ ì´ë¦„ê³µê°„
+	ProgComImpl::SimpleFunc();	// ë‹¤ë¥¸ ì´ë¦„ê³µê°„
 }
 
 void BestComImpl::PrettyFunc(void)
@@ -38,5 +38,5 @@ void BestComImpl::PrettyFunc(void)
 
 void ProgComImpl::SimpleFunc(void)
 {
-	std::cout << "ProgComÀÌ Á¤ÀÇÇÑ ÇÔ¼ö" << std::endl;
+	std::cout << "ProgComì´ ì •ì˜í•œ í•¨ìˆ˜" << std::endl;
 }

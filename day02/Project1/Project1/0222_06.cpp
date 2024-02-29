@@ -1,6 +1,6 @@
 #include <iostream>
 /*
-namespace °³³ä
+namespace ê°œë…
 */
 using namespace std;
 
@@ -15,7 +15,7 @@ namespace Hybrid
 
 int main(void)
 {
-	using Hybrid::HybFunc;	// Å°¿öµå usingÀ» ÀÌ¿ëÇØ¼­ ÀÌ¸§°ø°£ Hybrid¿¡ Á¤ÀÇµÈ HybFunc È£Ãâ ½Ã, ÀÌ¸§ °ø°£À» ÁöÁ¤ÇÏÁö ¾Ê°í È£ÃâÇÏ°Ú´Ù´Â °ÍÀ» ¸í½Ã(¼±¾ð)
-	HybFunc();				// using ¼±¾ðÀ» ÅëÇØ ÀÌ¸§°ø°£ÀÇ ÁöÁ¤ ¾øÀÌ HybFunc() È£Ãâ ¤¾¤¾
+	using Hybrid::HybFunc;	// í‚¤ì›Œë“œ usingì„ ì´ìš©í•´ì„œ ì´ë¦„ê³µê°„ Hybridì— ì •ì˜ëœ HybFunc í˜¸ì¶œ ì‹œ, ì´ë¦„ ê³µê°„ì„ ì§€ì •í•˜ì§€ ì•Šê³  í˜¸ì¶œí•˜ê² ë‹¤ëŠ” ê²ƒì„ ëª…ì‹œ(ì„ ì–¸)
+	HybFunc();				// using ì„ ì–¸ì„ í†µí•´ ì´ë¦„ê³µê°„ì˜ ì§€ì • ì—†ì´ HybFunc() í˜¸ì¶œ ã…Žã…Ž
 	return 0;
 }

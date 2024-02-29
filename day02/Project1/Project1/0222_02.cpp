@@ -1,8 +1,8 @@
 #include <iostream>
 /*
-¸ÅÅ©·Î ÇÔ¼ö
+ë§¤í¬ë¡œ í•¨ìˆ˜
 */
-#define SQUARE(X) ((X) * (X))	// ¸ÅÅ©·Î ÇÔ¼ö => ÀÏ¹ÝÀûÀÎ ÇÔ¼ö¿¡ ºñÇØ ½ÇÇà¼ÓµµÀÇ ÀÌÁ¡ÀÌ ÀÖ´Ù!, X Å¸ÀÔ¿¡ »ó°ü¾øÀÌ Àû¿ë °¡´É!
+#define SQUARE(X) ((X) * (X))	// ë§¤í¬ë¡œ í•¨ìˆ˜ => ì¼ë°˜ì ì¸ í•¨ìˆ˜ì— ë¹„í•´ ì‹¤í–‰ì†ë„ì˜ ì´ì ì´ ìžˆë‹¤!, X íƒ€ìž…ì— ìƒê´€ì—†ì´ ì ìš© ê°€ëŠ¥!
 
 int main(void)
 {

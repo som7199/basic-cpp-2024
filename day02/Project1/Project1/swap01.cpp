@@ -5,7 +5,7 @@ int main(void)
 {
 	int a = 10;
 	int b = 20;
-	cout << "¹Ù²Ù±â Àü" << endl;
+	cout << "ë°”ê¾¸ê¸° ì „" << endl;
 	cout << "a : " << a << endl;
 	cout << "b : " << b << endl;
 
@@ -14,7 +14,7 @@ int main(void)
 	a = b;
 	b = temp;
 	
-	cout << "¹Ù²ï ÈÄ" << endl;
+	cout << "ë°”ë€ í›„" << endl;
 	cout << "a : " << a << endl;
 	cout << "b : " << b << endl;
 

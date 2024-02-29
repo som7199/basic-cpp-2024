@@ -1,27 +1,27 @@
 #include <iostream>
 #include <string.h>
 /*
-ÆÄÀÏ ¼Ó¼º > ÀÏ¹Ý > ÀüÃ³¸®±â > ÀüÃ³¸®±â Á¤ÀÇ > ÆíÁý > _CRT_SECURE_NO_WARNINGS 
+íŒŒì¼ ì†ì„± > ì¼ë°˜ > ì „ì²˜ë¦¬ê¸° > ì „ì²˜ë¦¬ê¸° ì •ì˜ > íŽ¸ì§‘ > _CRT_SECURE_NO_WARNINGS 
 */
 using namespace std;
 
 class StudentClass
 {
 private:
-	char name[20];	// ¹®ÀÚ¿­ ¹è¿­À» ¼±¾ðÇÏ°í ¹Ù·Î ÃÊ±âÈ­ÇÏÁö ¾Ê´Â °æ¿ì´Â strcpy()¸¦ ÅëÇØ ÃÊ±âÈ­ÇÑ´Ù.
-	const int ID;	// ÇÐ¹øÀ» »ó¼öÈ­
+	char name[20];	// ë¬¸ìžì—´ ë°°ì—´ì„ ì„ ì–¸í•˜ê³  ë°”ë¡œ ì´ˆê¸°í™”í•˜ì§€ ì•ŠëŠ” ê²½ìš°ëŠ” strcpy()ë¥¼ í†µí•´ ì´ˆê¸°í™”í•œë‹¤.
+	const int ID;	// í•™ë²ˆì„ ìƒìˆ˜í™”
 	char major[20];
 	int age;
 
 public:
-	// ¹®ÀÚ¿­Àº ÁÖ¼Ò±â ¶§¹®¿¡ Æ÷ÀÎÅÍ º¯¼ö¿¡ ³Ö¾î¼­ »ç¿ëÇÑ´Ù. - ¹®ÀÚ¿­ÀÇ Ã¹¹øÂ° ¹®ÀÚ ÁÖ¼Ò°¡ ÀúÀåµÈ´Ù.
-	// ¸â¹ö ÀÌ´Ï¼È¶óÀÌÀú´Â °´Ã¼ »ý¼º ½Ã ÃÊ±âÈ­µÇÁö ¾Ê´Â ¸â¹öµéÀ» ÃÊ±âÈ­ÇÒ ¶§ »ç¿ëÇÑ´Ù. Áï, °´Ã¼ »ý¼º°ú »ó°ü¾øÀÌ ¹Ì¸® ÃÊ±âÈ­°¡ µÇ´Â ¸â¹öµé¿¡ ÃÊ±âÈ­
-	StudentClass(const char* stdName, int stdID, const char* stdMajor, int stdAge) : ID(stdID)	// ¸â¹ö ÀÌ´Ï¼È¶óÀÌÀú¸¦ ÅëÇÑ ¸â¹öº¯¼öÀÇ ÃÊ±âÈ­
+	// ë¬¸ìžì—´ì€ ì£¼ì†Œê¸° ë•Œë¬¸ì— í¬ì¸í„° ë³€ìˆ˜ì— ë„£ì–´ì„œ ì‚¬ìš©í•œë‹¤. - ë¬¸ìžì—´ì˜ ì²«ë²ˆì§¸ ë¬¸ìž ì£¼ì†Œê°€ ì €ìž¥ëœë‹¤.
+	// ë©¤ë²„ ì´ë‹ˆì…œë¼ì´ì €ëŠ” ê°ì²´ ìƒì„± ì‹œ ì´ˆê¸°í™”ë˜ì§€ ì•ŠëŠ” ë©¤ë²„ë“¤ì„ ì´ˆê¸°í™”í•  ë•Œ ì‚¬ìš©í•œë‹¤. ì¦‰, ê°ì²´ ìƒì„±ê³¼ ìƒê´€ì—†ì´ ë¯¸ë¦¬ ì´ˆê¸°í™”ê°€ ë˜ëŠ” ë©¤ë²„ë“¤ì— ì´ˆê¸°í™”
+	StudentClass(const char* stdName, int stdID, const char* stdMajor, int stdAge) : ID(stdID)	// ë©¤ë²„ ì´ë‹ˆì…œë¼ì´ì €ë¥¼ í†µí•œ ë©¤ë²„ë³€ìˆ˜ì˜ ì´ˆê¸°í™”
 	{
 		//ID = stdID;
 
-		// ¹®ÀÚ¿­ ¹è¿­À» ÃÊ±âÈ­ÇÏ´Â ¹æ¹ýÀº strcpy() »ç¿ëÇÏ±â!
-		// strcpy(ºó ¹è¿­, ¹®ÀÚ¿­ µé¾îÀÖ´Â ¹è¿­) : ºó ¹è¿­¿¡ ¹®ÀÚ¿­ º¹»çÇÏ´Â ÇÔ¼ö
+		// ë¬¸ìžì—´ ë°°ì—´ì„ ì´ˆê¸°í™”í•˜ëŠ” ë°©ë²•ì€ strcpy() ì‚¬ìš©í•˜ê¸°!
+		// strcpy(ë¹ˆ ë°°ì—´, ë¬¸ìžì—´ ë“¤ì–´ìžˆëŠ” ë°°ì—´) : ë¹ˆ ë°°ì—´ì— ë¬¸ìžì—´ ë³µì‚¬í•˜ëŠ” í•¨ìˆ˜
 		strcpy(name, stdName);
 		
 		strcpy(major, stdMajor);
@@ -29,17 +29,17 @@ public:
 	}
 	void showStudentInfo() const
 	{
-		cout << "ÇÐ»ý Á¤º¸" << endl;
-		cout << "ÀÌ¸§ : " << name << endl;
-		cout << "ÇÐ¹ø : " << ID << endl;
-		cout << "Àü°ø : " << major << endl;
-		cout << "³ªÀÌ : " << age << endl;
+		cout << "í•™ìƒ ì •ë³´" << endl;
+		cout << "ì´ë¦„ : " << name << endl;
+		cout << "í•™ë²ˆ : " << ID << endl;
+		cout << "ì „ê³µ : " << major << endl;
+		cout << "ë‚˜ì´ : " << age << endl;
 	}
 };
 
 int main(void)
 {
-	StudentClass std1("±è¼Ò¹Î", 201845809, "ITÀÀ¿ë°øÇÐ°ú", 24);
+	StudentClass std1("ê¹€ì†Œë¯¼", 201845809, "ITì‘ìš©ê³µí•™ê³¼", 24);
 	std1.showStudentInfo();
 	return 0;
 }

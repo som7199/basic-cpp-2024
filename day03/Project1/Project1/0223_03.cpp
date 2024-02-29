@@ -3,12 +3,12 @@
 using namespace std;
 
 /*
-¼Ó¼º > ÀÏ¹İ > SDL °Ë»ç > ¾Æ´Ï¿À ·Î º¯°æ!
+ì†ì„± > ì¼ë°˜ > SDL ê²€ì‚¬ > ì•„ë‹ˆì˜¤ ë¡œ ë³€ê²½!
 */
 
 char* MakeStrAdr(int len)
 {
-	//char* str = (char*)malloc(sizeof(char) * len);		// C: heap ¿µ¿ª¿¡ 20Byte Å©±â·Î ¸Ş¸ğ¸® ÇÒ´ç
+	//char* str = (char*)malloc(sizeof(char) * len);		// C: heap ì˜ì—­ì— 20Byte í¬ê¸°ë¡œ ë©”ëª¨ë¦¬ í• ë‹¹
 	char* str = new char[len];
 	return str;
 }
@@ -18,7 +18,7 @@ int main(void)
 	char* str = MakeStrAdr(20);
 	strcpy(str, "I am so happy~");
 	cout << str << endl;
-	//free(str);		// Èü¿¡ ÇÒ´çµÈ ¸Ş¸ğ¸® °ø°£ ¼Ò¸ê
+	//free(str);		// í™ì— í• ë‹¹ëœ ë©”ëª¨ë¦¬ ê³µê°„ ì†Œë©¸
 	delete []str;
 	return 0;
 }

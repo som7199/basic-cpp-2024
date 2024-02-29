@@ -1,8 +1,8 @@
 #include <iostream>
 #include "Point.h"
 /* 
-Á¤º¸ Àº´Ğ
-=> ¸â¹ö º¯¼ö¸¦ privateÀ¸·Î ¼±¾ğÇÏ°í, ÇØ´ç º¯¼ö¿¡ Á¢±ÙÇÏ´Â ÇÔ¼ö¸¦ º°µµ·Î Á¤ÀÇÇÏ¿© ¾ÈÀüÇÑ ÇüÅÂ·Î º¯¼öÀÇ Á¢±ÙÀ» À¯µµÇÏ´Â °Í
+ì •ë³´ ì€ë‹‰
+=> ë©¤ë²„ ë³€ìˆ˜ë¥¼ privateìœ¼ë¡œ ì„ ì–¸í•˜ê³ , í•´ë‹¹ ë³€ìˆ˜ì— ì ‘ê·¼í•˜ëŠ” í•¨ìˆ˜ë¥¼ ë³„ë„ë¡œ ì •ì˜í•˜ì—¬ ì•ˆì „í•œ í˜•íƒœë¡œ ë³€ìˆ˜ì˜ ì ‘ê·¼ì„ ìœ ë„í•˜ëŠ” ê²ƒ
 */
 
 using namespace std;
@@ -11,7 +11,7 @@ bool Point::InitMembers(int xpos, int ypos)
 {
 	if (xpos < 0 || ypos < 0)
 	{
-		cout << "¹ş¾î³­ ¹üÀ§ÀÇ °ª Àü´Ş " << xpos << " " << ypos << endl;
+		cout << "ë²—ì–´ë‚œ ë²”ìœ„ì˜ ê°’ ì „ë‹¬ " << xpos << " " << ypos << endl;
 		return false;
 	}
 
@@ -20,10 +20,10 @@ bool Point::InitMembers(int xpos, int ypos)
 	return true;
 }
 
-//ÇÔ¼ö¸¦ constÈ­ ½ÃÅ°´Â °Í!
-// const int Point::GetX() ÀÌ·¸°Ô ÇÏ¸é ¸®ÅÏÇÏ´Â °ªÀ» »ó¼öÈ­ ½ÃÅ°°Ú´Ù´Â ¸»
-// ÇÔ¼öÀÇ constÈ­´Â ¸Ç µÚ¿¡ ºÙ¿©¾ßÇÔ!!
-int Point::GetX() const		// const ÇÔ¼ö! 
+//í•¨ìˆ˜ë¥¼ constí™” ì‹œí‚¤ëŠ” ê²ƒ!
+// const int Point::GetX() ì´ë ‡ê²Œ í•˜ë©´ ë¦¬í„´í•˜ëŠ” ê°’ì„ ìƒìˆ˜í™” ì‹œí‚¤ê² ë‹¤ëŠ” ë§
+// í•¨ìˆ˜ì˜ constí™”ëŠ” ë§¨ ë’¤ì— ë¶™ì—¬ì•¼í•¨!!
+int Point::GetX() const		// const í•¨ìˆ˜! 
 {
 	return x;
 }
@@ -37,7 +37,7 @@ bool Point::SetX(int xpos)
 {
 	if (xpos < 0 || xpos > 100)
 	{
-		cout << "¹ş¾î³­ ¹üÀ§ÀÇ °ª Àü´Ş " << xpos << endl;
+		cout << "ë²—ì–´ë‚œ ë²”ìœ„ì˜ ê°’ ì „ë‹¬ " << xpos << endl;
 		return false;
 	}
 
@@ -49,7 +49,7 @@ bool Point::SetY(int ypos)
 {
 	if (ypos < 0 || ypos > 100)
 	{
-		cout << "¹ş¾î³­ ¹üÀ§ÀÇ °ª Àü´Ş " << ypos << endl;
+		cout << "ë²—ì–´ë‚œ ë²”ìœ„ì˜ ê°’ ì „ë‹¬ " << ypos << endl;
 		return false;
 	}
 

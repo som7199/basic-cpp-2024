@@ -1,5 +1,5 @@
 /*
-	¼±ÅÃ Á¦¾î¹®: if else ¹®
+	ì„ íƒ ì œì–´ë¬¸: if else ë¬¸
 */
 #include <iostream>
 
@@ -8,19 +8,19 @@ using namespace std;
 int main(void)
 {
 	int inKey;
-	cout << "Á¤¼ö ÀÔ·Â > ";
+	cout << "ì •ìˆ˜ ì…ë ¥ > ";
 	cin >> inKey;
 
-	if (inKey == 7) {	// if(Á¶°Ç½Ä) {... ½ÇÇà¹®}
+	if (inKey == 7) {	// if(ì¡°ê±´ì‹) {... ì‹¤í–‰ë¬¸}
 		cout << "Bingo!" << endl;
 	}
 	else if (inKey > 7) {
-		cout << "¼ıÀÚ°¡ Å®´Ï´Ù." << endl;
+		cout << "ìˆ«ìê°€ í½ë‹ˆë‹¤." << endl;
 	}
 	else if (inKey < 7) {
-		cout << "¼ıÀÚ°¡ ÀÛ½À´Ï´Ù." << endl;
+		cout << "ìˆ«ìê°€ ì‘ìŠµë‹ˆë‹¤." << endl;
 	}
-	else cout << "Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù." << endl;
+	else cout << "ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤." << endl;
 
 	return 0;
 }

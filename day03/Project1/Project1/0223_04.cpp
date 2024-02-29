@@ -1,15 +1,15 @@
 #include <iostream>
 #include <string.h>
-#include <cstdlib> // <stdlib.h> ´ë½Å <cstdlib> Çì´õ¸¦ »ç¿ë
+#include <cstdlib> // <stdlib.h> ëŒ€ì‹  <cstdlib> í—¤ë”ë¥¼ ì‚¬ìš©
 #define _CRT_SECURE_NO_WARNINGS
 /*
-°´Ã¼ÀÇ »ı¼º => Èü ¿µ¿ª¿¡ °´Ã¼ »ı¼ºµÊ!
+ê°ì²´ì˜ ìƒì„± => í™ ì˜ì—­ì— ê°ì²´ ìƒì„±ë¨!
 */
 using namespace std;
 
 class Simple {
 public:
-    Simple()        // »ı¼ºÀÚ(Å¬·¡½º ÀÌ¸§°ú °°Àº ¸Ş¼­µå)
+    Simple()        // ìƒì„±ì(í´ë˜ìŠ¤ ì´ë¦„ê³¼ ê°™ì€ ë©”ì„œë“œ)
     {
         cout << "I'm simple constructor!" << endl;
     }
@@ -18,22 +18,22 @@ public:
 int main(void) {
 
     cout << "case 1: ";
-    Simple* sp1 = new Simple;       // new ¿¬»êÀÚ¸¦ ÅëÇÑ °´Ã¼ »ı¼º
-    // Èü ¿µ¿ª¿¡ SimpleÀÌ¶ó´Â °´Ã¼ »ı¼º
-    // ±× °´Ã¼ÀÇ ÁÖ¼Ò°ªÀ» sp1ÀÌ¶ó´Â Æ÷ÀÎÅÍ º¯¼ö¿¡ ÀúÀå
-    // Simple Å¸ÀÔÀÇ sp1
-    // ½ºÅÃ¿¡ sp1 Æ÷ÀÎÅÍ º¯¼ö, Èü¿¡´Â Simple °´Ã¼ »ı¼ºµÊ
-    // Æ÷ÀÎÅÍ º¯¼ö sp1À¸·Î Simple °´Ã¼¿¡ Á¢±Ù
+    Simple* sp1 = new Simple;       // new ì—°ì‚°ìë¥¼ í†µí•œ ê°ì²´ ìƒì„±
+    // í™ ì˜ì—­ì— Simpleì´ë¼ëŠ” ê°ì²´ ìƒì„±
+    // ê·¸ ê°ì²´ì˜ ì£¼ì†Œê°’ì„ sp1ì´ë¼ëŠ” í¬ì¸í„° ë³€ìˆ˜ì— ì €ì¥
+    // Simple íƒ€ì…ì˜ sp1
+    // ìŠ¤íƒì— sp1 í¬ì¸í„° ë³€ìˆ˜, í™ì—ëŠ” Simple ê°ì²´ ìƒì„±ë¨
+    // í¬ì¸í„° ë³€ìˆ˜ sp1ìœ¼ë¡œ Simple ê°ì²´ì— ì ‘ê·¼
 
     cout << "case 2: ";
     Simple* sp2 = (Simple*)malloc(sizeof(Simple) * 1);
-    // malloc ÇÔ¼ö È£ÃâÀ» ÅëÇØ Èü ¿µ¿ª¿¡ º¯¼ö¸¦ ÇÒ´ç
+    // malloc í•¨ìˆ˜ í˜¸ì¶œì„ í†µí•´ í™ ì˜ì—­ì— ë³€ìˆ˜ë¥¼ í• ë‹¹
     // ????????????????
-    // ÀÏ´Ü new - delete / malloc - free ÀÇ µ¿ÀÛ ¹æ½Ä¿¡´Â Â÷ÀÌ°¡ ÀÖ´Ù´Ï±î
-    // mallocÀº ±×³É Èü ¿µ¿ª¿¡ ¸Ş¸ğ¸® °ø°£¸¸ ÇÒ´ç ¹Ş´Â°Å°í, new´Â ¸Ş¸ğ¸® °ø°£ ÇÒ´ç°ú µ¿½Ã¿¡ »ı¼ºÀÚµµ È£ÃâµÇ´Â°Ç°¡?
+    // ì¼ë‹¨ new - delete / malloc - free ì˜ ë™ì‘ ë°©ì‹ì—ëŠ” ì°¨ì´ê°€ ìˆë‹¤ë‹ˆê¹Œ
+    // mallocì€ ê·¸ëƒ¥ í™ ì˜ì—­ì— ë©”ëª¨ë¦¬ ê³µê°„ë§Œ í• ë‹¹ ë°›ëŠ”ê±°ê³ , newëŠ” ë©”ëª¨ë¦¬ ê³µê°„ í• ë‹¹ê³¼ ë™ì‹œì— ìƒì„±ìë„ í˜¸ì¶œë˜ëŠ”ê±´ê°€?
 
     cout << endl << "end of main !" << endl;
-    delete sp1;             // °´Ã¼ ¹İÈ¯
+    delete sp1;             // ê°ì²´ ë°˜í™˜
     free(sp2);
 
     return 0;

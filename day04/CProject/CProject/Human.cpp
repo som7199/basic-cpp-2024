@@ -11,7 +11,7 @@ public:
 	Human(const char* name, int age, const char* job) : age(age) {
 		strcpy(myname, name);
 		strcpy(myjob, job);
-		cout << "³ª´Â " << age << "¼¼ÀÎ " << job << "ÀÔ´Ï´Ù." << endl;
+		cout << "ë‚˜ëŠ” " << age << "ì„¸ì¸ " << job << "ìž…ë‹ˆë‹¤." << endl;
 	}
 
 	void humanInfo()
@@ -21,7 +21,7 @@ public:
 }
 int main(void)
 {
-	Human h1("±è¼Ò¹Î", 24, "ÃëÁØ»ý");
+	Human h1("ê¹€ì†Œë¯¼", 24, "ì·¨ì¤€ìƒ");
 	h1.humanInfo();
 	return 0;
 }

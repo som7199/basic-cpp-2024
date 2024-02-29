@@ -3,7 +3,7 @@
 #define __HUMAN_H__
 
 /*
-Çì´õÆÄÀÏÀº ¼±¾ðÀ» ¸ð¾ÆµÐ´Ù.
+í—¤ë”íŒŒì¼ì€ ì„ ì–¸ì„ ëª¨ì•„ë‘”ë‹¤.
 */
 
 class Human {

@@ -1,31 +1,31 @@
 #include <iostream>
 using namespace std;
 /*
-Ä¸½¶È­
+ìº¡ìŠí™”
 */
-class SinivelCap	// Äà¹° Ã³Ä¡¿ë Ä¸½¶
+class SinivelCap	// ì½§ë¬¼ ì²˜ì¹˜ìš© ìº¡ìŠ
 {
 public:
-	void Take() const { cout << "Äà¹°ÀÌ ½Ï~! ³³´Ï´Ù." << endl; }
+	void Take() const { cout << "ì½§ë¬¼ì´ ì‹¹~! ë‚©ë‹ˆë‹¤." << endl; }
 };
 
-class SneezeCap		// ÀçÃ¤±â Ã³Ä¡¿ë Ä¸½¶
+class SneezeCap		// ì¬ì±„ê¸° ì²˜ì¹˜ìš© ìº¡ìŠ
 {
 public:
-	void Take() const { cout << "ÀçÃ¤±â°¡ ¸Ü½À´Ï´Ù." << endl; }
+	void Take() const { cout << "ì¬ì±„ê¸°ê°€ ë©ìŠµë‹ˆë‹¤." << endl; }
 };
 
-class SnuffleCap	// ÄÚ¸·Èû Ã³Ä¡¿ë Ä¸½¶
+class SnuffleCap	// ì½”ë§‰í˜ ì²˜ì¹˜ìš© ìº¡ìŠ
 {
 public:
-	void Take() const { cout << "ÄÚ°¡ »½ ¶Õ¸³´Ï´Ù." << endl; }
+	void Take() const { cout << "ì½”ê°€ ë»¥ ëš«ë¦½ë‹ˆë‹¤." << endl; }
 };
 
 class ColdPatient
 {
 public:
-	// ÂüÁ¶ÀÚ~~~!!
-	// const ÇÔ¼ö´Â ÇÔ¼ö ¾È¿¡ ÀÛ¼ºµÇ¾î ÀÖ´Â ³»¿ëÀÌ º¯°æµÉ ¼ö ÀÖ´Â °¡´É¼ºÀÌ ¾ø¾î¾ßÇÔ..! const´Ï±î
+	// ì°¸ì¡°ì~~~!!
+	// const í•¨ìˆ˜ëŠ” í•¨ìˆ˜ ì•ˆì— ì‘ì„±ë˜ì–´ ìˆëŠ” ë‚´ìš©ì´ ë³€ê²½ë  ìˆ˜ ìˆëŠ” ê°€ëŠ¥ì„±ì´ ì—†ì–´ì•¼í•¨..! constë‹ˆê¹Œ
 	void TakeSinivelCap(const SinivelCap& cap) const { 
 		cap.Take(); 
 	}

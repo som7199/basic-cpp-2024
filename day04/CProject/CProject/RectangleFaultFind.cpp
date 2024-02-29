@@ -7,20 +7,20 @@ int main(void)
 {
 	Point pos1;
 	if (!pos1.InitMembers(-2, 4))
-		cout << "ÃÊ±âÈ­ ½ÇÆÐ" << endl;
+		cout << "ì´ˆê¸°í™” ì‹¤íŒ¨" << endl;
 	if (!pos1.InitMembers(2, 4))
-		cout << "ÃÊ±âÈ­ ½ÇÆÐ" << endl;
+		cout << "ì´ˆê¸°í™” ì‹¤íŒ¨" << endl;
 
 	Point pos2;
 	if (!pos2.InitMembers(5, 9))
-		cout << "ÃÊ±âÈ­ ½ÇÆÐ" << endl;
+		cout << "ì´ˆê¸°í™” ì‹¤íŒ¨" << endl;
 
 	Rectangle rec;
 	if (!rec.InitMembers(pos2, pos1))
-		cout << "Á÷»ç°¢Çü ÃÊ±âÈ­ ½ÇÆÐ" << endl;
+		cout << "ì§ì‚¬ê°í˜• ì´ˆê¸°í™” ì‹¤íŒ¨" << endl;
 
 	if (!rec.InitMembers(pos1, pos2))
-		cout << "Á÷»ç°¢Çü ÃÊ±âÈ­ ½ÇÆÐ" << endl;
+		cout << "ì§ì‚¬ê°í˜• ì´ˆê¸°í™” ì‹¤íŒ¨" << endl;
 
 	rec.ShowRecInfo();
 	return 0;

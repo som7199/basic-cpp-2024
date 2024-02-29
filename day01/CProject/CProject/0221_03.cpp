@@ -1,5 +1,5 @@
 /*
-	¼±ÅÃ Á¦¾î¹® : switch
+	ì„ íƒ ì œì–´ë¬¸ : switch
 */
 #include <iostream>
 
@@ -8,24 +8,24 @@ using namespace std;
 int main(void)
 {
 	int inKey;
-	cout << "¼ıÀÚ ÀÔ·Â > ";
+	cout << "ìˆ«ì ì…ë ¥ > ";
 	cin >> inKey;
 
 	switch (inKey) {
 	case 1:
-		cout << "1 ÀÔ´Ï´Ù." << endl;
+		cout << "1 ì…ë‹ˆë‹¤." << endl;
 		break;
 
 	case 2:
-		cout << "2 ÀÔ´Ï´Ù." << endl;
+		cout << "2 ì…ë‹ˆë‹¤." << endl;
 		//break;
 
 	case 3:
-		cout << "3 ÀÔ´Ï´Ù." << endl;
+		cout << "3 ì…ë‹ˆë‹¤." << endl;
 		break;
 
 	default:
-		cout << "ÀÌ°Íµµ Àú°Íµµ ¾Æ´Õ´Ï´Ù." << endl;
+		cout << "ì´ê²ƒë„ ì €ê²ƒë„ ì•„ë‹™ë‹ˆë‹¤." << endl;
 	}
 
 	return 0;

@@ -1,6 +1,6 @@
 #include <iostream>
 /*
-namespace º°Äª
+namespace ë³„ì¹­
 */
 using namespace std;
 
@@ -21,7 +21,7 @@ int main(void)
 	AAA::BBB::CCC::num1 = 20;
 	AAA::BBB::CCC::num2 = 30;
 
-	namespace ABC = AAA::BBB::CCC;	// AAA::BBB::CCC¿¡ ABC¶ó´Â º°ÄªÁÖ±â!
+	namespace ABC = AAA::BBB::CCC;	// AAA::BBB::CCCì— ABCë¼ëŠ” ë³„ì¹­ì£¼ê¸°!
 	cout << ABC::num1 << endl;
 	cout << ABC::num2 << endl;
 	return 0;

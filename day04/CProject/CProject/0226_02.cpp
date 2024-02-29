@@ -14,7 +14,7 @@ private:
 	int myMoney;
 
 public:
-	void IninMembers(int price, int num, int money)	// => »ı¼ºÀÚ : °´Ã¼¸¦ »ı¼ºÇÏ°í ÃÊ±âÈ­ÇÑ´Ù.
+	void IninMembers(int price, int num, int money)	// => ìƒì„±ì : ê°ì²´ë¥¼ ìƒì„±í•˜ê³  ì´ˆê¸°í™”í•œë‹¤.
 	{
 		APPLE_PRICE = price;
 		numOfApples = num;
@@ -25,19 +25,19 @@ public:
 		int num = money / APPLE_PRICE;
 		numOfApples -= num;
 		myMoney += money;
-		return num;		// ÆÇ¸ÅÇÑ »ç°ú °³¼ö ¸®ÅÏ
+		return num;		// íŒë§¤í•œ ì‚¬ê³¼ ê°œìˆ˜ ë¦¬í„´
 	}
 	void ShowSalesResult()
 	{
-		cout << "³²Àº »ç°ú : " << numOfApples << endl;
-		cout << "ÆÇ¸Å ¼öÀÍ : " << myMoney << endl << endl;
+		cout << "ë‚¨ì€ ì‚¬ê³¼ : " << numOfApples << endl;
+		cout << "íŒë§¤ ìˆ˜ìµ : " << myMoney << endl << endl;
 	}
 };
 
 class FruitBuyer
 {
-	//Å¬·¡½º´Â ¾Æ¹«·± ¼±¾ğÀÌ Á¸ÀçÇÏÁö ¾ÊÀ» ¶§ privateÀ¸·Î °£ÁÖµÊ!(±¸Á¶Ã¼´Â public)
-	int myMoney;		// private => Å¬·¡½º ³»¿¡¼­ Á¢±Ù Á¦¾î Áö½ÃÀÚ°¡ »ı·«µÇ¾úÀ¸´Ï, privateÀ¸·Î °£ÁÖ
+	//í´ë˜ìŠ¤ëŠ” ì•„ë¬´ëŸ° ì„ ì–¸ì´ ì¡´ì¬í•˜ì§€ ì•Šì„ ë•Œ privateìœ¼ë¡œ ê°„ì£¼ë¨!(êµ¬ì¡°ì²´ëŠ” public)
+	int myMoney;		// private => í´ë˜ìŠ¤ ë‚´ì—ì„œ ì ‘ê·¼ ì œì–´ ì§€ì‹œìê°€ ìƒëµë˜ì—ˆìœ¼ë‹ˆ, privateìœ¼ë¡œ ê°„ì£¼
 	int numOfApples;	// private
 
 public:
@@ -47,10 +47,10 @@ public:
 		numOfApples = 0;
 	}
 
-	// ¸Å°³º¯¼öÀÇ ¼±¾ğ À§Ä¡¿¡ ÂüÁ¶ÀÚ ½áÁÖ°í ÇÔ¼ö È£Ãâ ½Ã Àü´ŞµÇ´Â ÀÎÀÚ·Î ÃÊ±âÈ­! 
-	// µ¿ÀÏÇÑ °´Ã¼¸¦ °¡¸®Å´! ÂüÁ¶´Ï±î ¤¾¤¾ 
-	// º°¸íµµ seller¶ó¼­ Çò°¥¸± ¼ö ÀÖÁö¸¸ seller µÎ °³°¡ °°Àº °´Ã¼¸¦ °¡¸®Å°°í ÀÖ´Â °Å ¾Ë°ÚÁö!!
-	void BuyApples(FruitSeller& seller, int money)		// ÂüÁ¶ÀÚ! 
+	// ë§¤ê°œë³€ìˆ˜ì˜ ì„ ì–¸ ìœ„ì¹˜ì— ì°¸ì¡°ì ì¨ì£¼ê³  í•¨ìˆ˜ í˜¸ì¶œ ì‹œ ì „ë‹¬ë˜ëŠ” ì¸ìë¡œ ì´ˆê¸°í™”! 
+	// ë™ì¼í•œ ê°ì²´ë¥¼ ê°€ë¦¬í‚´! ì°¸ì¡°ë‹ˆê¹Œ ã…ã… 
+	// ë³„ëª…ë„ sellerë¼ì„œ í—·ê°ˆë¦´ ìˆ˜ ìˆì§€ë§Œ seller ë‘ ê°œê°€ ê°™ì€ ê°ì²´ë¥¼ ê°€ë¦¬í‚¤ê³  ìˆëŠ” ê±° ì•Œê² ì§€!!
+	void BuyApples(FruitSeller& seller, int money)		// ì°¸ì¡°ì! 
 	{
 		numOfApples += seller.SaleApples(money);
 		myMoney -= money;
@@ -58,8 +58,8 @@ public:
 
 	void ShowBuyResult()
 	{
-		cout << "ÇöÀç ÀÜ¾× : " << myMoney << endl;
-		cout << "»ç°ú °³¼ö : " << numOfApples << endl << endl;
+		cout << "í˜„ì¬ ì”ì•¡ : " << myMoney << endl;
+		cout << "ì‚¬ê³¼ ê°œìˆ˜ : " << numOfApples << endl << endl;
 	}
 };
 
@@ -67,13 +67,13 @@ int main(void)
 {
 	FruitSeller seller;
 	seller.IninMembers(1000, 20, 0);
-	FruitBuyer buyer;				// Èü ¿µ¿ª¿¡ ÇÒ´çÇÒ ¶§¸¸ new ¿¬»êÀÚ »ç¿ë! new ¿¬»êÀÚ ¾È½èÀ¸´Ï±î ¾ê´Â ±×³É ½ºÅÃ¿¡¼­ ¹Ù·Î »ç¿ëÇÒ ¼ö ÀÖÀ½!
+	FruitBuyer buyer;				// í™ ì˜ì—­ì— í• ë‹¹í•  ë•Œë§Œ new ì—°ì‚°ì ì‚¬ìš©! new ì—°ì‚°ì ì•ˆì¼ìœ¼ë‹ˆê¹Œ ì–˜ëŠ” ê·¸ëƒ¥ ìŠ¤íƒì—ì„œ ë°”ë¡œ ì‚¬ìš©í•  ìˆ˜ ìˆìŒ!
 	buyer.IninMembers(5000);
-	buyer.BuyApples(seller, 2000);	// °úÀÏÀÇ ±¸¸Å!
+	buyer.BuyApples(seller, 2000);	// ê³¼ì¼ì˜ êµ¬ë§¤!
 
-	cout << "°úÀÏ ÆÇ¸ÅÀÚÀÇ ÇöÈ²" << endl;
+	cout << "ê³¼ì¼ íŒë§¤ìì˜ í˜„í™©" << endl;
 	seller.ShowSalesResult();
-	cout << "°úÀÏ ±¸¸ÅÀÚÀÇ ÇöÈ²" << endl;
+	cout << "ê³¼ì¼ êµ¬ë§¤ìì˜ í˜„í™©" << endl;
 	buyer.ShowBuyResult();
 	return 0;
 }

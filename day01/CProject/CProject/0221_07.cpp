@@ -35,31 +35,31 @@ int main(void)
 
 	while (true) {
 
-		std::cout << "¿¬»êÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À > (Á¾·á¸¦ ¿øÇÒ ½Ã X¸¦ ÀÔ·ÂÇÏ½Ã¿À.) ";
+		std::cout << "ì—°ì‚°ìë¥¼ ì…ë ¥í•˜ì‹œì˜¤ > (ì¢…ë£Œë¥¼ ì›í•  ì‹œ Xë¥¼ ì…ë ¥í•˜ì‹œì˜¤.) ";
 		std::cin >> inKey;
 
 		if (inKey == 'X') {
-			std::cout << "Á¾·á!" << std::endl;
+			std::cout << "ì¢…ë£Œ!" << std::endl;
 			break;
 		}
 
-		std::cout << "µÎ ¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À > ";
+		std::cout << "ë‘ ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤ > ";
 		std::cin >> num1 >> num2;
 
 		if (inKey == '+') {
-			std::cout << "\n°á°ú : " << add(num1, num2) << std::endl;
+			std::cout << "\nê²°ê³¼ : " << add(num1, num2) << std::endl;
 		}
 
 		else if (inKey == '-') {
-			std::cout << "\n°á°ú : " << minus(num1, num2) << std::endl;
+			std::cout << "\nê²°ê³¼ : " << minus(num1, num2) << std::endl;
 		}
 
 		else if (inKey == '*') {
-			std::cout << "\n°á°ú : " << multiple(num1, num2) << std::endl;
+			std::cout << "\nê²°ê³¼ : " << multiple(num1, num2) << std::endl;
 		}
 
 		else if (inKey == '/') {
-			std::cout << "\n°á°ú : " << divide(num1, num2) << std::endl;
+			std::cout << "\nê²°ê³¼ : " << divide(num1, num2) << std::endl;
 		}
 	}
 	
