@@ -1,5 +1,5 @@
-// MyInfo °´Ã¼¸¦ »ı¼ºÇÑ´Ù.
-// MyInfo°´Ã¼.printMyInfo();¸¦ È£ÃâÇÑ´Ù.
+// MyInfo ê°ì²´ë¥¼ ìƒì„±í•œë‹¤.
+// MyInfoê°ì²´.printMyInfo();ë¥¼ í˜¸ì¶œí•œë‹¤.
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cstring>
@@ -11,7 +11,7 @@ private:
 	int age;
 public:
 	Myclass(const char* myname, int myage) {
-		//cout << "MyClass »ı¼ºÀÚ" << endl;
+		//cout << "MyClass ìƒì„±ì" << endl;
 		strcpy(name, myname);
 		age = myage;
 	}
@@ -28,18 +28,18 @@ private:
 	char pNumber[20];
 public:
 	MyInfo(const char* myname, int myage, const char* mypNumber) : Myclass(myname, myage) {
-		//cout << "MyInfo »ı¼ºÀÚ" << endl;
+		//cout << "MyInfo ìƒì„±ì" << endl;
 		strcpy(pNumber, mypNumber);
 	}
 	void printMyInfo()
 	{
-		cout << "³ªÀÇ ÀÌ¸§Àº " << getMyName() << "ÀÌ°í, ³ªÀÌ´Â " << getMyAge() << "»ìÀÌ¸ç, ÀüÈ­¹øÈ£´Â " << pNumber << "ÀÔ´Ï´Ù." << endl;
+		cout << "ë‚˜ì˜ ì´ë¦„ì€ " << getMyName() << "ì´ê³ , ë‚˜ì´ëŠ” " << getMyAge() << "ì‚´ì´ë©°, ì „í™”ë²ˆí˜¸ëŠ” " << pNumber << "ì…ë‹ˆë‹¤." << endl;
 	}
 };
 
 int main(void)
 {
-	MyInfo m("±è¼Ò¹Î", 24, "010-2575-7199");
+	MyInfo m("ê¹€ì†Œë¯¼", 24, "010-2575-7199");
 	m.printMyInfo();
 	return 0;
 }
