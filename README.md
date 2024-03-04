@@ -134,13 +134,81 @@ int func(int a) {	// a = 10;, num의 10을 복사해서 사용한다.
 }
 // main에서
 int num = 10;
-int res = func(num);	// res = 20; , a의 20과 res의 20은 다른 놈! a가 없어지기전에 a의 값을 '복사'해서 사용하는거!! => 복사 생성자 호출됨
+int res = func(num);	// res = 20; , a의 20과 res의 20은 다른 놈! a 반환 후 a가 없어지기전에 a의 값을 '복사'해서 사용하는거!! => 복사 생성자 호출됨
 ```
 
 ## 7일차
+*  UnivStudent의 생성자는 Person의 생성자를 호출하는 형태로 Person 클래스의 멤버를 초기화하는 것이 좋다!
+```cpp
+//UnivStudent 클래스의 생성자
+UnivStudent(char* myname, int myage, char* mymajor) : Person(myage, myname)
+{
+	strcpy(major, mymajor);
+}
+/*
+UnivStudent의 멤버 뿐만 아니라 Person의 멤버를 초기화 하기 위한 인자 전달!
+이니셜라이저 => 생성자의 호출을 의미함
+즉, Person 클래스의 생성자를 호출하면서 인자로 myage와 myname에 저장된 값을 전달하는 것
+UnivStudent 클래스와 같이, 상속받는 클래스는 이니셜라이저를 이용해서 상속하는 클래스의 생성자 호출을 명시할 수 있다.
+*/
+```
 
+- 유도 클래스의 객체가 소멸될 때에는, 유도 클래스의 소멸자가 실행되고 난 다음에 기초 클래스의 소멸자가 실행된다.
+- 기초 클래스의 소멸자도, 유도 클래스의 소멸자도 호출됨을 기억하자
+- 생성자에서 동적 할당한 메모리 공간은 소멸자에서 해제해야한다!
 
 ## 8일차
+- 오버로딩(Overloading) - 다중정의
+- 오버라이딩(Overriding) - 재정의, 상속 관계에서 사용
+
+- C++ 컴파일러는 포인터를 이용한 연산의 가능성 여부를 판단할 때, 포인터의 자료형을 기준으로 판단함!
+- 실제 가리키는 객체의 자료형을 기준으로 판단하지 않음!!!!!!!
+- 접근은 객체 포인터의 타입을 따름!!
+
+```cpp
+/*
+부모 타입의 객체 포인터로 자식 객체를 가리킬 수 있다!
+하지만 자식 타입의 객체 포인터로 부모 객체는 가리킬 수 없다.
+그리고 접근은 객체 포인터의 타입을 따른다!!!!!! 그래서 ptr1->Sleep(); 했을 때 Student 클래스의 Sleep()이 아니라 Person 클래스의 Sleep()
+*/
+Person* ptr1 = new Student();			// Student는 Person을 상속, Person형 포인터 변수는 Student 객체를 가리킬 수 있음
+Person* ptr2 = new PartTimeStudent();	// PartTimeStudent는 Person을 간접 상속!, Person형 포인터 변수는 PartTimeStudent 객체를 가리킬 수 있음
+Student* ptr3 = new PartTimeStudent();	// PartTimeStudent는 Student를 상속, Student형 포인터 변수는 PartTimeStudent 객체를 가리킬 수 있음
+```
+
+```cpp
+int main(void)
+{
+	// Derived 클래스는 Base 클래스를 상속받음
+	Derived* dptr = new Derived();
+	Base* bptr = dptr;
+}
+// dptr은 Derived 클래스의 포인터 변수! 그럼 이 포인터가 가리키는 객체는 분명 Base 클래스를 직접 혹은 간접적으로 상속하는 객체!
+// 따라서 Base형 포인터 변수로도 참조가 가능하다! 라고 컴파일러가 판단함
+
+```
+
+- 가상함수(Virtual Function)
+	- virtual 키워드의 선언을 통해 가상함수의 선언이 이뤄진다.
+	- 가상함수가 선언되고 나면, 이 함수를 오버라이딩 하는 함수도 가상함수가 된다.
+	- 함수가 가상함수로 선언되면, 해당 함수 호출 시 포인터의 자료형을 기반으로 호출대상을 결정하지 않고,
+	- 포인터 변수가 실제로 가리키는 객체를 참조하여 호출의 대상을 결정한다!!
+
+- 순수 가상함수(Pure Virtual Function)
+	- 함수의 몸체가 정의되지 않은 함수
+	```cpp
+	virtual int GetPay() const = 0;
+	virtual void ShowSalaryInfo() const = 0;
+	```
+	- 0의 대입을 의미하는 게 아니라, 명시적으로 몸체를 정의하지 않았음을 컴파일러에게 알리는 것.
+	
+- 추상 클래스(Abstract Class)
+	- 하나 이상의 멤버 함수를 순수 가상함수로 선언한 클래스
+	- 객체 생성이 불가능한 클래스
+	
+* C++의 객체와 멤버함수는 다음과 같은 관계를 가진다.
+	- 객체가 생성되면 멤버 변수는 객체 내에 존재하지만,
+	- 멤버함수는 메모리의 한 공간에 별도로 위치하고선, 이 함수가 정의된 클래스의 모든 객체가 이를 공유하는 형태를 취한다!!
 
 ## 9일차
 
