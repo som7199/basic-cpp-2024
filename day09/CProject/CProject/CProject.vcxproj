@@ -19,12 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="homework.cpp" />
+    <ClCompile Include="ConsoleOutput.cpp" />
+    <ClCompile Include="homework02.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7e21475e-0d17-406f-918c-a34d826425d6}</ProjectGuid>
+    <ProjectGuid>{150aa3e2-02fe-4bd2-a97c-7e7f0f5b874d}</ProjectGuid>
     <RootNamespace>CProject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="homework.cpp">
+    <ClCompile Include="homework02.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleOutput.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

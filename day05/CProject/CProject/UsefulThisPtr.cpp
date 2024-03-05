@@ -16,7 +16,7 @@ public:
         this->num2 = num2; // 두 번째 정수를 멤버 변수에 할당
     }
     /*
-    TwoNumber(int num1, int num2) : num1(num1), num2(num2)
+    TwoNumber(int num1, int num2) : num1(num1), num2(num2)      // 멤버 이니셜라이저에서는 this 포인터를 사용할 수 없다.
        {
         // empty
        }
@@ -24,8 +24,8 @@ public:
     // 두 정수를 출력하는 함수
     void ShowTwoNumber()
     {
-        cout << "First number: " << this->num1 << endl; // 첫 번째 정수 출력
-        cout << "Second number: " << this->num2 << endl; // 두 번째 정수 출력
+        cout << "First number: " << this->num1 << endl;     // 첫 번째 정수 출력, this 포인터를 사용함으로써 멤버변수에 접근함을 명확히 함! 일반적으로 이런 경우엔 this 포인터 생략함 ㅋ
+        cout << "Second number: " << this->num2 << endl;    // 두 번째 정수 출력
     }
 };
 

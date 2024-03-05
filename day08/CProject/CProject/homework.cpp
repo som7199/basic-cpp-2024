@@ -1,5 +1,5 @@
 /*
-RemoteControl클래스, SamsungTv 클래스, LgTv 클래스를 설계하고,
+RemoteControl클래스, SamsungTv 클래스, LgTV 클래스를 설계하고,
 remote -> on()을 호출하면 연결된 TV에 따라서 "삼성 TV on" 또는 "LG TV on"이 출력되도록 프로그램을 완성하시오.
 */
 
@@ -37,7 +37,7 @@ int main(void)
 	remote->On();									// SamsungTv 클래스의 On() 호출
 
 	remote = new LgTV();							// 포인터 변수에 LgTv 객체 저장
-	remote->On();									// LgTv 클래스의 On() 호출
+	remote->On();									// LgTV 클래스의 On() 호출
 	delete remote;									// 메모리 사용 후 반납!
 
 	return 0;
