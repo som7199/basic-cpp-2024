@@ -7,10 +7,6 @@ private:
 	int x, y;
 public:
 	Point(int X, int Y) : x(X), y(Y) {}
-	void viewPoint() const
-	{
-		cout << '[' << x << ', ' << y << ']' << endl;
-	}
 	Point operator+(const Point& p)
 	{
 		Point po(x + p.x, y + p.y);
@@ -22,6 +18,7 @@ public:
 		return po;
 	}
 	friend Point operator+(int num, const Point& p);
+	friend ostream& operator<<(ostream&, const Point&);
 };
 
 Point operator+(int num, const Point& p)
@@ -31,6 +28,11 @@ Point operator+(int num, const Point& p)
 }
 
 // cout 오버로딩 해주기
+ostream& operator<<(ostream& os, const Point& p)
+{
+	os << '[' << p.x << ', ' << p.y << ']' << endl;
+	return os;
+}
 
 int main(void) 
 {

@@ -237,5 +237,17 @@ int main(void)
 	}
 	```
 
-## 10일차
-
+## 10일차 (470쪽 보고 감, 그 뒤로 조퇴 ㅠ 앞내용도 정리 필요!!)
+- new 연산자
+	1. 메모리 공간의 할당 
+	2. 생성자의 호출
+	3. 할당하고자 하는 자료형에 맞게 반환된 주소 값의 형 변환
+	=> C언어의 malloc()과는 달리, new 연산자가 반환하는 주소 값을 형 변환할 필요가 없다.
+	
+	- 우리는 메모리 공간의 할당만 오버로딩 할 수 있다!
+	- 반환형은 반드시 void 포인터 형, 매개변수형은 size_t
+	=> void* operator new(size_t size) {...}
+- delete 연산자의 오버로딩
+	=> void operator delete(void* adr) { delete[] adr; }
+	- 사용하는 컴파일러에서 void 포인터 형 대상의 delete 연산을 허용하지 않는다면
+	- char형 포인터 형으로 변환해서 delete 연산 진행하면 됨 => delete[] ((char*)adr);

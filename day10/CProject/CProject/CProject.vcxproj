@@ -19,13 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AssignShallowCopyError.cpp" />
-    <ClCompile Include="homework02.cpp" />
+    <ClCompile Include="NewDeleteOverloading.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{150aa3e2-02fe-4bd2-a97c-7e7f0f5b874d}</ProjectGuid>
+    <ProjectGuid>{b4c8d205-f874-4f36-aed4-d0f5074e2614}</ProjectGuid>
     <RootNamespace>CProject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
