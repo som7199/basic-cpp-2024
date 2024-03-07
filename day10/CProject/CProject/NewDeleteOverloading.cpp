@@ -28,7 +28,8 @@ ostream& operator<<(ostream& os, const Point& pos)
 	os << '[' << pos.xpos << ", " << pos.ypos << ']' << endl;
 	return os;
 }
-소민이 공부하지마삼;
+
+// 소민이 공부하지마삼 - 정환티비;
 int main(void)
 {
 	Point* ptr = new Point(3, 4);
