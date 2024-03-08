@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="NewDeleteOverloading.cpp">
+    <ClCompile Include="homework_day12.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
