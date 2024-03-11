@@ -19,16 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="127_2_TrainingFunc.cpp" />
-    <ClCompile Include="127_3_TrainingMain.cpp" />
+    <ClInclude Include="..\..\..\..\..\Users\user\Documents\카카오톡 받은 파일\왕권님\127_1_Training.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="127_1_Training.h" />
+    <ClCompile Include="..\..\..\..\..\Users\user\Documents\카카오톡 받은 파일\왕권님\127_2_TrainingFunc.cpp" />
+    <ClCompile Include="..\..\..\..\..\Users\user\Documents\카카오톡 받은 파일\왕권님\127_3_TrainingMain.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{afafc2d4-dc5d-4ae7-bf5f-7526f3b6d888}</ProjectGuid>
+    <ProjectGuid>{d1667c64-2990-432e-9401-03ff2e4b3715}</ProjectGuid>
     <RootNamespace>CProject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

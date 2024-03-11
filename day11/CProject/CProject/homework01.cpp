@@ -96,9 +96,9 @@ int main(void)
 	}
 
 	printf("\n");
-	printf("±¹¾î ÃÑÁ¡ : %d, ±¹¾î Æò±Õ : %.1f\n", korSum, float(korSum / size(gradeArr)));
-	printf("¿µ¾î ÃÑÁ¡ : %d, ¿µ¾î Æò±Õ : %.1f\n", EngSum, float(EngSum / size(gradeArr)));
-	printf("¼öÇÐ ÃÑÁ¡ : %d, ¼öÇÐ Æò±Õ : %.1f\n\n", Matsum, float(Matsum / size(gradeArr)));
+	printf("±¹¾î ÃÑÁ¡ : %d, ±¹¾î Æò±Õ : %.1f\n", korSum, korSum / float(size(gradeArr)));
+	printf("¿µ¾î ÃÑÁ¡ : %d, ¿µ¾î Æò±Õ : %.1f\n", EngSum, EngSum / float(size(gradeArr)));
+	printf("¼öÇÐ ÃÑÁ¡ : %d, ¼öÇÐ Æò±Õ : %.1f\n\n", Matsum, Matsum / float(size(gradeArr)));
 
 	for (int i = 0; i < 3; i++) {
 		printf("°´Ã¼ ÇÒ´ç ¼Ò¸êÀÚ È£Ãâ\n");
