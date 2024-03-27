@@ -19,11 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="127_2_TrainingFunc.cpp" />
-    <ClCompile Include="127_3_TrainingMain.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="127_1_Training.h" />
+    <ClCompile Include="..\..\..\homework_day12\Product.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

@@ -96,6 +96,11 @@ void ShowProductInfo(Product* product)
     cout << "생산자: " << product->getProducer() << endl;
 }
 
+void SearchProduct()
+{
+
+}
+
 int main(void)
 {
     Product* productArr[100]; // Product 객체 포인터 배열
@@ -201,12 +206,13 @@ int main(void)
                 if (productArr[i]->mytype() == "Book")
                 {
                     productArr[i]
-                    }
+                }
         }
         else if (menu_num == 3)
         {
             // 상품 검색
             cout << "상품 검색" << endl;
+            cout << "현재 검색이 불가합니다." << endl;
         }
         else if (menu_num == 4)
         {

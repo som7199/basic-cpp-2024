@@ -1,4 +1,11 @@
-#include "Training.h"
+/*
+	 File: ProductFunc.cpp
+
+	 Created: 24-03-06
+	 Author: ±è¼Ò¹Î
+  */
+
+#include "product.h"
 #include <iostream>
 #include <string>
 

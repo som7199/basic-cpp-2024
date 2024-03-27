@@ -1,5 +1,12 @@
-#include "Training.h"
-#include "TrainingFunc.cpp"
+/*
+	 File: ProductMain.cpp
+
+	 Created: 24-03-06
+	 Author: ±è¼Ò¹Î
+  */
+
+#include "product.h"
+#include "ProductFunc.cpp"
 #include <string>
 using namespace std;
 

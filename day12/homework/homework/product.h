@@ -1,5 +1,12 @@
-#ifndef __TRAINING_
-#define __TRAINING_
+/*
+	 File: product.h
+
+	 Created: 24-03-06
+	 Author: ±è¼Ò¹Î
+  */
+
+#ifndef __PRODUCT_
+#define __PRODUCT_
 #include <string>
 using namespace std;
 

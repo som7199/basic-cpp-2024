@@ -15,16 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="127_2_TrainingFunc.cpp">
+    <ClCompile Include="..\..\..\homework_day12\Product.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="127_3_TrainingMain.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="127_1_Training.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
